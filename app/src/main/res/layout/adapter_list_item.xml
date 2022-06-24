@@ -2,17 +2,18 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewItem"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     android:elevation="8dp"
     app:cardCornerRadius="8dp">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imageview"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop" />
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--        android:id="@+id/imageview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:scaleType="centerCrop" />-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,23 +21,23 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="#E1303F9F"
+            android:background="#E1B3B6CD"
             android:gravity="center_vertical"
             android:paddingStart="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             tools:text="@tools:sample/full_names" />
 
         <TextView
-            android:id="@+id/desc"
+            android:id="@+id/designation"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="#E1303F9F"
+            android:background="#E1B3B6CD"
             android:gravity="center_vertical"
             android:paddingStart="8dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
             tools:text="@tools:sample/full_names" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
