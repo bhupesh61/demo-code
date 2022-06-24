@@ -9,6 +9,7 @@
     tools:context=".UsersListActivity">
 
     <TextView
+        android:id="@+id/users_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
