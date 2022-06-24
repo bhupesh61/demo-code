@@ -34,7 +34,7 @@ class UsersListViewModelTest {
         try {
             val response: Response<List<UsersDataModel>> = call.execute()
             val userList: List<UsersDataModel>? = response.body()
-            Assert.assertFalse(response.isSuccessful)
+            Assert.assertTrue(response.isSuccessful)
         } catch (e: Exception) {
             e.printStackTrace()
         }
